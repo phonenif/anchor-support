@@ -1,16 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anchor - Support</title>
-<style>body{font-family:-apple-system,sans-serif;max-width:600px;margin:40px auto;padding:20px;color:#1a1a2e}h1{color:#0f0f2d}a{color:#f5a623}</style>
+<title>Anchor · Energy — Support</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans TC', -apple-system, sans-serif; background: #FAFBFC; color: #1A2A3A; line-height: 1.8; }
+  .header { background: linear-gradient(135deg, #042C53, #0A4A7F); padding: 48px 24px 40px; text-align: center; }
+  .header h1 { color: white; font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .header p { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  h2 { font-size: 18px; font-weight: 700; color: #042C53; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #EF9F27; display: inline-block; }
+  p { font-size: 15px; color: #3A4A5A; margin-bottom: 12px; }
+  .card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card h3 { font-size: 16px; color: #042C53; margin-bottom: 8px; }
+  .card p { margin-bottom: 8px; }
+  .faq { border-left: 3px solid #185FA5; padding-left: 16px; margin-bottom: 20px; }
+  .faq .q { font-weight: 700; color: #042C53; margin-bottom: 4px; }
+  .faq .a { color: #4A5A6A; }
+  .contact-btn { display: inline-block; background: #185FA5; color: white; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 8px; }
+  .links { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+  .links a { font-size: 14px; color: #185FA5; text-decoration: none; padding: 8px 16px; border: 1px solid #185FA5; border-radius: 8px; }
+  .footer { text-align: center; padding: 24px; color: #9AA; font-size: 12px; border-top: 1px solid #E8E8E8; margin-top: 32px; }
+  .anchor-icon { font-size: 36px; margin-bottom: 8px; }
+</style>
 </head>
 <body>
-<h1>Anchor Support</h1>
-<p>Know your energy. Own your day.</p>
-<p>For support, feedback, or questions, please contact us at:</p>
-<p><a href="mailto:na67jack@yahoo.com.hk">na67jack@yahoo.com.hk</a></p>
-<p>&copy; 2026 Anchor Energy</p>
+
+<div class="header">
+  <div class="anchor-icon">⚓</div>
+  <h1>Anchor · Energy</h1>
+  <p>Support · 支援中心</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>📧 聯繫我們 Contact Us</h3>
+    <p>如有任何問題或建議，歡迎聯繫：</p>
+    <p><strong>電郵：</strong>na67jack@yahoo.com.hk</p>
+    <p>我們通常在 48 小時內回覆。</p>
+    <a href="mailto:na67jack@yahoo.com.hk" class="contact-btn">發送電郵</a>
+  </div>
+
+  <h2>常見問題 FAQ</h2>
+
+  <div class="faq">
+    <p class="q">Anchor 需要 Apple Watch 嗎？</p>
+    <p class="a">不需要。你可以使用手動輸入模式記錄 HRV、心率和睡眠數據。Apple Watch 可以自動讀取這些數據，但不是必須的。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">我的數據安全嗎？</p>
+    <p class="a">所有數據僅儲存在你的 iPhone 上，不會上傳到任何伺服器。刪除 App 即刪除所有數據。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">精力分數是怎麼計算的？</p>
+    <p class="a">精力分數基於三個信號的加權組合：心率變異度（HRV）佔 50%、靜息心率佔 25%、睡眠品質佔 25%。數據會經過指數移動平均（EMA）平滑處理，並根據你的年齡和性別進行校正。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">什麼是「黃金時段」？</p>
+    <p class="a">黃金時段是 Anchor 根據你過去的精力數據預測的每日最高效工作時段，通常持續 2-3 小時。建議在這個時段安排最重要的深度工作。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">什麼是「主客觀差距」？</p>
+    <p class="a">差距是你的主觀感受（你覺得自己精力多高）和客觀數據（HRV 等生理指標）之間的差異。高估精力可能導致過度工作，低估可能錯過高效時段。追蹤差距可以提高你對自身狀態的覺察。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">如何取消訂閱？</p>
+    <p class="a">前往 iPhone 的「設定」→ 點擊你的名字 →「訂閱」→ 找到 Anchor → 點擊「取消訂閱」。取消後，付費功能在當前訂閱期結束前仍可使用。</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">如何刪除所有數據？</p>
+    <p class="a">刪除 Anchor App 即會刪除所有本地數據。HealthKit 中的數據需要在 iPhone 的「健康」App 中單獨管理。</p>
+  </div>
+
+  <div class="links">
+    <a href="privacy.html">隱私政策</a>
+    <a href="terms.html">使用條款</a>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Anchor · Energy. All rights reserved.<br>
+    Know your energy. Own your day.<br><br>
+    Version 1.0.0</p>
+  </div>
+</div>
+
 </body>
 </html>

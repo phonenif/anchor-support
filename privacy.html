@@ -1,21 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anchor - Privacy Policy</title>
-<style>body{font-family:-apple-system,sans-serif;max-width:600px;margin:40px auto;padding:20px;color:#1a1a2e}h1,h2{color:#0f0f2d}</style>
+<title>Anchor · Energy — Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans TC', -apple-system, sans-serif; background: #FAFBFC; color: #1A2A3A; line-height: 1.8; }
+  .header { background: linear-gradient(135deg, #042C53, #0A4A7F); padding: 48px 24px 40px; text-align: center; }
+  .header h1 { color: white; font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .header p { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  .lang-toggle { text-align: right; margin-bottom: 24px; }
+  .lang-toggle a { font-size: 13px; color: #185FA5; text-decoration: none; padding: 6px 12px; border: 1px solid #185FA5; border-radius: 6px; }
+  h2 { font-size: 18px; font-weight: 700; color: #042C53; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #EF9F27; display: inline-block; }
+  p, li { font-size: 15px; color: #3A4A5A; margin-bottom: 12px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  .highlight { background: #E8F4FD; border-left: 3px solid #185FA5; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+  .highlight p { margin: 0; color: #0C447C; font-weight: 500; }
+  .footer { text-align: center; padding: 24px; color: #9AA; font-size: 12px; border-top: 1px solid #E8E8E8; margin-top: 32px; }
+  .anchor-icon { font-size: 36px; margin-bottom: 8px; }
+</style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>Last updated: March 27, 2026</p>
-<h2>Data Collection</h2>
-<p>Anchor collects health data (HRV, resting heart rate) from Apple HealthKit with your explicit permission. This data is stored locally on your device and is not transmitted to any server.</p>
-<h2>Data Usage</h2>
-<p>Your health and location data is used solely to provide energy tracking insights within the app.</p>
-<h2>Data Sharing</h2>
-<p>We do not sell, share, or transfer your personal data to third parties.</p>
-<h2>Contact</h2>
-<p>For questions about this policy, contact us at <a href="mailto:na67jack@yahoo.com.hk">na67jack@yahoo.com.hk</a></p>
+
+<div class="header">
+  <div class="anchor-icon">⚓</div>
+  <h1>隱私政策</h1>
+  <p>Privacy Policy · 最後更新：2026年3月28日</p>
+</div>
+
+<div class="container">
+  <div class="lang-toggle"><a href="#en" onclick="toggleLang()">English</a></div>
+
+  <div id="zh">
+    <div class="highlight">
+      <p>⚓ Anchor · Energy 的核心承諾：你的所有健康數據和位置數據僅儲存在你的設備上，絕不上傳至任何伺服器。</p>
+    </div>
+
+    <h2>1. 我們收集什麼</h2>
+    <p>Anchor · Energy 會在你的設備上處理以下數據：</p>
+    <ul>
+      <li><strong>健康數據：</strong>心率變異度（HRV）、靜息心率、睡眠時長。透過 Apple HealthKit 讀取，或由你手動輸入。</li>
+      <li><strong>使用數據：</strong>冥想記錄、精力評分、任務完成情況。</li>
+      <li><strong>位置數據：</strong>GPS 座標（僅在你授權後），用於場域效能分析。</li>
+      <li><strong>用戶偏好：</strong>年齡範圍、工作類型、起床時間等設定。</li>
+    </ul>
+
+    <h2>2. 數據如何儲存</h2>
+    <div class="highlight">
+      <p>所有數據均儲存在你的 iPhone 本地，使用 SQLite 數據庫。Anchor 沒有後端伺服器，不會將你的數據傳輸到任何外部服務。</p>
+    </div>
+
+    <h2>3. 數據共享</h2>
+    <p>Anchor 不會與任何第三方共享你的個人數據。我們不使用第三方分析工具、廣告 SDK 或數據追蹤器。</p>
+
+    <h2>4. Apple HealthKit</h2>
+    <p>Anchor 使用 Apple HealthKit 讀取健康數據和寫入冥想記錄。根據 Apple 的規定：</p>
+    <ul>
+      <li>HealthKit 數據不會用於廣告或數據挖掘。</li>
+      <li>HealthKit 數據不會出售給第三方。</li>
+      <li>HealthKit 數據不會在未經你同意的情況下分享。</li>
+    </ul>
+
+    <h2>5. 數據刪除</h2>
+    <p>你可以隨時刪除 Anchor 中的所有數據：刪除 App 即刪除所有本地數據。HealthKit 中的數據可在「健康」App 中單獨管理。</p>
+
+    <h2>6. 兒童隱私</h2>
+    <p>Anchor 不面向 13 歲以下的兒童。我們不會故意收集兒童的個人信息。</p>
+
+    <h2>7. 政策變更</h2>
+    <p>如果我們更新此隱私政策，將在此頁面發佈更新版本並標明日期。</p>
+
+    <h2>8. 聯繫我們</h2>
+    <p>如對隱私政策有任何疑問，請聯繫：<br>
+    電郵：na67jack@yahoo.com.hk</p>
+  </div>
+
+  <div id="en" style="display:none">
+    <div class="highlight">
+      <p>⚓ Anchor · Energy's core commitment: All your health and location data stays on your device. We never upload it to any server.</p>
+    </div>
+
+    <h2>1. What We Collect</h2>
+    <p>Anchor · Energy processes the following data on your device:</p>
+    <ul>
+      <li><strong>Health Data:</strong> Heart rate variability (HRV), resting heart rate, sleep duration. Read via Apple HealthKit or manually entered.</li>
+      <li><strong>Usage Data:</strong> Meditation records, energy scores, task completion.</li>
+      <li><strong>Location Data:</strong> GPS coordinates (only with your permission), used for field performance analysis.</li>
+      <li><strong>Preferences:</strong> Age range, work type, wake time, and other settings.</li>
+    </ul>
+
+    <h2>2. How Data Is Stored</h2>
+    <div class="highlight">
+      <p>All data is stored locally on your iPhone using SQLite. Anchor has no backend servers and does not transmit your data to any external service.</p>
+    </div>
+
+    <h2>3. Data Sharing</h2>
+    <p>Anchor does not share your personal data with any third parties. We do not use third-party analytics, advertising SDKs, or data trackers.</p>
+
+    <h2>4. Apple HealthKit</h2>
+    <p>Anchor uses Apple HealthKit to read health data and write meditation sessions. Per Apple's requirements:</p>
+    <ul>
+      <li>HealthKit data is not used for advertising or data mining.</li>
+      <li>HealthKit data is not sold to third parties.</li>
+      <li>HealthKit data is not shared without your consent.</li>
+    </ul>
+
+    <h2>5. Data Deletion</h2>
+    <p>You can delete all Anchor data at any time by deleting the app. HealthKit data can be managed separately in the Health app.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Anchor is not intended for children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>If we update this privacy policy, the updated version will be posted on this page with the revision date.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about this privacy policy? Contact us at:<br>
+    Email: na67jack@yahoo.com.hk</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Anchor · Energy. All rights reserved.<br>Know your energy. Own your day.</p>
+  </div>
+</div>
+
+<script>
+function toggleLang() {
+  const zh = document.getElementById('zh');
+  const en = document.getElementById('en');
+  const btn = document.querySelector('.lang-toggle a');
+  if (zh.style.display === 'none') {
+    zh.style.display = 'block'; en.style.display = 'none'; btn.textContent = 'English';
+  } else {
+    zh.style.display = 'none'; en.style.display = 'block'; btn.textContent = '中文';
+  }
+}
+</script>
 </body>
 </html>
