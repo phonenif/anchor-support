@@ -4,141 +4,146 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anchor · Energy — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Noto Sans TC', -apple-system, sans-serif; background: #FAFBFC; color: #1A2A3A; line-height: 1.8; }
-  .header { background: linear-gradient(135deg, #042C53, #0A4A7F); padding: 48px 24px 40px; text-align: center; }
-  .header h1 { color: white; font-size: 28px; font-weight: 700; margin-bottom: 4px; }
-  .header p { color: rgba(255,255,255,0.6); font-size: 14px; }
-  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
-  .lang-toggle { text-align: right; margin-bottom: 24px; }
-  .lang-toggle a { font-size: 13px; color: #185FA5; text-decoration: none; padding: 6px 12px; border: 1px solid #185FA5; border-radius: 6px; }
-  h2 { font-size: 18px; font-weight: 700; color: #042C53; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #EF9F27; display: inline-block; }
-  p, li { font-size: 15px; color: #3A4A5A; margin-bottom: 12px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  .highlight { background: #E8F4FD; border-left: 3px solid #185FA5; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
-  .highlight p { margin: 0; color: #0C447C; font-weight: 500; }
-  .footer { text-align: center; padding: 24px; color: #9AA; font-size: 12px; border-top: 1px solid #E8E8E8; margin-top: 32px; }
-  .anchor-icon { font-size: 36px; margin-bottom: 8px; }
+:root { --navy:#042C53; --navy-light:#0a3d6e; --amber:#EF9F27; --bg:#f8f9fb; --card:#fff; --text:#1a2a3a; --text-muted:#6b7d8e; --border:#e4e9ef; --radius:16px; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Noto Sans TC','DM Sans',-apple-system,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+.hero { background:linear-gradient(135deg,var(--navy),var(--navy-light)); padding:48px 24px 56px; text-align:center; position:relative; }
+.hero::before { content:''; position:absolute; top:-50%;left:-50%; width:200%;height:200%; background:radial-gradient(circle at 70% 30%,rgba(239,159,39,0.08) 0%,transparent 50%); }
+.lang-toggle { position:absolute; top:16px; right:20px; display:flex; gap:4px; background:rgba(255,255,255,0.1); border-radius:8px; padding:3px; z-index:10; }
+.lang-btn { padding:6px 14px; border:none; border-radius:6px; font-size:13px; font-weight:500; cursor:pointer; transition:all 0.2s; background:transparent; color:rgba(255,255,255,0.6); font-family:inherit; }
+.lang-btn.active { background:rgba(255,255,255,0.2); color:white; }
+.back-link { position:absolute; top:20px; left:20px; color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; z-index:10; }
+.back-link:hover { color:white; }
+.hero h1 { color:white; font-size:24px; font-weight:700; position:relative; }
+.hero .subtitle { color:var(--amber); font-size:13px; margin-top:6px; position:relative; }
+.content { max-width:640px; margin:-24px auto 0; padding:0 16px 48px; position:relative; }
+.card { background:var(--card); border-radius:var(--radius); padding:28px 24px; margin-bottom:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03); }
+.card h2 { font-size:17px; font-weight:600; margin:24px 0 10px; color:var(--navy); }
+.card h2:first-child { margin-top:0; }
+.card p, .card li { font-size:14px; color:var(--text-muted); margin-bottom:10px; }
+.card ul { padding-left:20px; }
+.card li { margin-bottom:6px; }
+.updated { font-size:12px; color:var(--text-muted); margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+footer { text-align:center; padding:24px; font-size:12px; color:var(--text-muted); }
+footer a { color:var(--navy); text-decoration:none; }
+[data-lang="en"] { display:none; }
+body.en [data-lang="zh"] { display:none; }
+body.en [data-lang="en"] { display:block; }
 </style>
 </head>
 <body>
-
-<div class="header">
-  <div class="anchor-icon">⚓</div>
-  <h1>隱私政策</h1>
-  <p>Privacy Policy · 最後更新：2026年3月28日</p>
+<div class="hero">
+  <a class="back-link" href="index.html">← Back</a>
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('zh')">繁中</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  </div>
+  <h1 data-lang="zh">隱私政策</h1>
+  <h1 data-lang="en">Privacy Policy</h1>
+  <p class="subtitle">Anchor · Energy</p>
 </div>
 
-<div class="container">
-  <div class="lang-toggle"><a href="#en" onclick="toggleLang()">English</a></div>
+<div class="content">
+  <div class="card" data-lang="zh">
+    <p class="updated">最後更新：2026 年 3 月 28 日</p>
+    <p>Anchor（「本應用程式」）非常重視您的隱私。本隱私政策說明我們如何收集、使用和保護您的個人資料。</p>
 
-  <div id="zh">
-    <div class="highlight">
-      <p>⚓ Anchor · Energy 的核心承諾：你的所有健康數據和位置數據僅儲存在你的設備上，絕不上傳至任何伺服器。</p>
-    </div>
-
-    <h2>1. 我們收集什麼</h2>
-    <p>Anchor · Energy 會在你的設備上處理以下數據：</p>
+    <h2>資料收集</h2>
+    <p>本應用程式透過 Apple HealthKit 收集以下健康數據（需您明確授權）：</p>
     <ul>
-      <li><strong>健康數據：</strong>心率變異度（HRV）、靜息心率、睡眠時長。透過 Apple HealthKit 讀取，或由你手動輸入。</li>
-      <li><strong>使用數據：</strong>冥想記錄、精力評分、任務完成情況。</li>
-      <li><strong>位置數據：</strong>GPS 座標（僅在你授權後），用於場域效能分析。</li>
-      <li><strong>用戶偏好：</strong>年齡範圍、工作類型、起床時間等設定。</li>
+      <li>心率變異度（HRV）</li>
+      <li>靜息心率</li>
+      <li>睡眠數據</li>
+    </ul>
+    <p>本應用程式也會收集位置數據以提供地點效能分析功能。</p>
+
+    <h2>資料儲存</h2>
+    <p>所有個人數據均儲存在您的設備本地，不會傳送到任何外部伺服器。我們不使用雲端儲存或第三方分析服務。</p>
+
+    <h2>資料使用</h2>
+    <p>您的健康和位置數據僅用於在應用程式內提供精力追蹤和洞察功能。我們不會將您的數據用於廣告、行銷或任何其他目的。</p>
+
+    <h2>資料分享</h2>
+    <p>我們不會出售、分享或以任何方式將您的個人數據轉移給第三方。</p>
+
+    <h2>HealthKit 整合</h2>
+    <p>Anchor 使用 Apple HealthKit 來讀取健康數據。根據 Apple 的規定：</p>
+    <ul>
+      <li>HealthKit 數據不會用於廣告或資料探勘</li>
+      <li>HealthKit 數據不會出售給第三方</li>
+      <li>HealthKit 數據不會在未經用戶同意的情況下被分享</li>
     </ul>
 
-    <h2>2. 數據如何儲存</h2>
-    <div class="highlight">
-      <p>所有數據均儲存在你的 iPhone 本地，使用 SQLite 數據庫。Anchor 沒有後端伺服器，不會將你的數據傳輸到任何外部服務。</p>
-    </div>
+    <h2>數據刪除</h2>
+    <p>您可以隨時刪除應用程式來清除所有本地數據。您也可以在應用程式設定中匯出您的數據為 CSV 檔案。</p>
 
-    <h2>3. 數據共享</h2>
-    <p>Anchor 不會與任何第三方共享你的個人數據。我們不使用第三方分析工具、廣告 SDK 或數據追蹤器。</p>
+    <h2>兒童隱私</h2>
+    <p>本應用程式不針對 13 歲以下的兒童，我們不會故意收集兒童的個人資料。</p>
 
-    <h2>4. Apple HealthKit</h2>
-    <p>Anchor 使用 Apple HealthKit 讀取健康數據和寫入冥想記錄。根據 Apple 的規定：</p>
-    <ul>
-      <li>HealthKit 數據不會用於廣告或數據挖掘。</li>
-      <li>HealthKit 數據不會出售給第三方。</li>
-      <li>HealthKit 數據不會在未經你同意的情況下分享。</li>
-    </ul>
+    <h2>政策變更</h2>
+    <p>我們可能會不時更新本隱私政策。任何變更將在此頁面公布，並更新「最後更新」日期。</p>
 
-    <h2>5. 數據刪除</h2>
-    <p>你可以隨時刪除 Anchor 中的所有數據：刪除 App 即刪除所有本地數據。HealthKit 中的數據可在「健康」App 中單獨管理。</p>
-
-    <h2>6. 兒童隱私</h2>
-    <p>Anchor 不面向 13 歲以下的兒童。我們不會故意收集兒童的個人信息。</p>
-
-    <h2>7. 政策變更</h2>
-    <p>如果我們更新此隱私政策，將在此頁面發佈更新版本並標明日期。</p>
-
-    <h2>8. 聯繫我們</h2>
-    <p>如對隱私政策有任何疑問，請聯繫：<br>
-    電郵：na67jack@yahoo.com.hk</p>
+    <h2>聯絡我們</h2>
+    <p>如您對本隱私政策有任何疑問，請透過以下方式聯繫我們：</p>
+    <p><a href="mailto:na67jack@yahoo.com.hk" style="color:var(--navy)">na67jack@yahoo.com.hk</a></p>
   </div>
 
-  <div id="en" style="display:none">
-    <div class="highlight">
-      <p>⚓ Anchor · Energy's core commitment: All your health and location data stays on your device. We never upload it to any server.</p>
-    </div>
+  <div class="card" data-lang="en">
+    <p class="updated">Last updated: March 28, 2026</p>
+    <p>Anchor ("the App") takes your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
 
-    <h2>1. What We Collect</h2>
-    <p>Anchor · Energy processes the following data on your device:</p>
+    <h2>Data Collection</h2>
+    <p>The App collects the following health data through Apple HealthKit (with your explicit permission):</p>
     <ul>
-      <li><strong>Health Data:</strong> Heart rate variability (HRV), resting heart rate, sleep duration. Read via Apple HealthKit or manually entered.</li>
-      <li><strong>Usage Data:</strong> Meditation records, energy scores, task completion.</li>
-      <li><strong>Location Data:</strong> GPS coordinates (only with your permission), used for field performance analysis.</li>
-      <li><strong>Preferences:</strong> Age range, work type, wake time, and other settings.</li>
+      <li>Heart Rate Variability (HRV)</li>
+      <li>Resting Heart Rate</li>
+      <li>Sleep Data</li>
+    </ul>
+    <p>The App also collects location data to provide location-based energy efficiency analysis.</p>
+
+    <h2>Data Storage</h2>
+    <p>All personal data is stored locally on your device and is never transmitted to any external server. We do not use cloud storage or third-party analytics services.</p>
+
+    <h2>Data Usage</h2>
+    <p>Your health and location data is used solely to provide energy tracking and insight features within the App. We do not use your data for advertising, marketing, or any other purposes.</p>
+
+    <h2>Data Sharing</h2>
+    <p>We do not sell, share, or transfer your personal data to third parties in any way.</p>
+
+    <h2>HealthKit Integration</h2>
+    <p>Anchor uses Apple HealthKit to read health data. In accordance with Apple's requirements:</p>
+    <ul>
+      <li>HealthKit data is not used for advertising or data mining</li>
+      <li>HealthKit data is not sold to third parties</li>
+      <li>HealthKit data is not shared without user consent</li>
     </ul>
 
-    <h2>2. How Data Is Stored</h2>
-    <div class="highlight">
-      <p>All data is stored locally on your iPhone using SQLite. Anchor has no backend servers and does not transmit your data to any external service.</p>
-    </div>
+    <h2>Data Deletion</h2>
+    <p>You can delete the App at any time to remove all local data. You may also export your data as a CSV file from the App settings.</p>
 
-    <h2>3. Data Sharing</h2>
-    <p>Anchor does not share your personal data with any third parties. We do not use third-party analytics, advertising SDKs, or data trackers.</p>
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13, and we do not knowingly collect personal information from children.</p>
 
-    <h2>4. Apple HealthKit</h2>
-    <p>Anchor uses Apple HealthKit to read health data and write meditation sessions. Per Apple's requirements:</p>
-    <ul>
-      <li>HealthKit data is not used for advertising or data mining.</li>
-      <li>HealthKit data is not sold to third parties.</li>
-      <li>HealthKit data is not shared without your consent.</li>
-    </ul>
+    <h2>Policy Changes</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.</p>
 
-    <h2>5. Data Deletion</h2>
-    <p>You can delete all Anchor data at any time by deleting the app. HealthKit data can be managed separately in the Health app.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>Anchor is not intended for children under 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>7. Changes</h2>
-    <p>If we update this privacy policy, the updated version will be posted on this page with the revision date.</p>
-
-    <h2>8. Contact</h2>
-    <p>Questions about this privacy policy? Contact us at:<br>
-    Email: na67jack@yahoo.com.hk</p>
-  </div>
-
-  <div class="footer">
-    <p>© 2026 Anchor · Energy. All rights reserved.<br>Know your energy. Own your day.</p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p><a href="mailto:na67jack@yahoo.com.hk" style="color:var(--navy)">na67jack@yahoo.com.hk</a></p>
   </div>
 </div>
+
+<footer>
+  <p>© 2026 Anchor Energy. All rights reserved.</p>
+  <p style="margin-top:4px"><a href="index.html">Support</a> · <a href="terms.html">Terms</a></p>
+</footer>
 
 <script>
-function toggleLang() {
-  const zh = document.getElementById('zh');
-  const en = document.getElementById('en');
-  const btn = document.querySelector('.lang-toggle a');
-  if (zh.style.display === 'none') {
-    zh.style.display = 'block'; en.style.display = 'none'; btn.textContent = 'English';
-  } else {
-    zh.style.display = 'none'; en.style.display = 'block'; btn.textContent = '中文';
-  }
-}
+function setLang(lang) { document.body.className=lang==='en'?'en':''; document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); event.target.classList.add('active'); localStorage.setItem('anchor-lang',lang); }
+const saved=localStorage.getItem('anchor-lang'); if(saved==='en'){document.body.className='en';document.querySelectorAll('.lang-btn')[1].classList.add('active');document.querySelectorAll('.lang-btn')[0].classList.remove('active');}
 </script>
 </body>
 </html>
